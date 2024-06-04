@@ -1,0 +1,19 @@
+
+  # ngrok completions
+  if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+  fi
+
+  # NVM stuff
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+  # Env variables
+  export ANDROID_HOME=/Users/asad/Library/Android/sdk
+  export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+  export PATH="/opt/homebrew/opt/libpcap/bin:$PATH"
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+  export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+  export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+  export PATH="/Users/asad/flutter/bin:/opt/homebrew/opt/openjdk/bin:$PATH"
