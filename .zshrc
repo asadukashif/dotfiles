@@ -118,5 +118,8 @@ alias la="ls --all"
 eval $(thefuck --alias shit)
 eval $(thefuck --alias fk)
 
+
+source ~/.completions
+
 # Custom aliases
 alias np='pnpm'
