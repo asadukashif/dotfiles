@@ -109,7 +109,8 @@ _fzf_comprun() {
 export BAT_THEME="Coldark-Dark"
 
 # EZA (better ls)
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-permissions --no-user"
+# alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-permissions --no-user"
+alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-permissions --no-user"
 alias l="ls"
 alias ll="ls --all --long"
 alias la="ls --all"
