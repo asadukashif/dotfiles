@@ -125,5 +125,6 @@ source ~/.completions
 # Custom aliases
 alias np='pnpm'
 alias dev='cd $HOME/Development'
+alias chkk='cd $HOME/Development/chkk'
 
 PATH=~/.console-ninja/.bin:$PATH
