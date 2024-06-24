@@ -30,11 +30,11 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light zsh-users/zsh-completions
 
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::aws
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
@@ -105,6 +105,9 @@ _fzf_comprun() {
   esac
 }
 
+# kubectl auto-complete
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
+
 # BAT (better cat)
 export BAT_THEME="Coldark-Dark"
 
@@ -128,3 +131,4 @@ alias dev='cd $HOME/Development'
 alias chkk='cd $HOME/Development/chkk'
 
 PATH=~/.console-ninja/.bin:$PATH
+
