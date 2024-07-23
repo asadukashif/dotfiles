@@ -14,7 +14,15 @@
 
 ### Brew command for all the installation is
 ```bash
-brew install git zsh zoxide fzf bat exa thefuck zinit stow
+brew install git \
+zsh \
+zoxide \
+fzf \
+bat \
+exa \
+thefuck \
+zinit \
+stow
 ```
 
 ### Resources used
