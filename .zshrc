@@ -105,9 +105,6 @@ _fzf_comprun() {
   esac
 }
 
-# kubectl auto-complete
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
-
 # BAT (better cat)
 export BAT_THEME="Coldark-Dark"
 
@@ -129,6 +126,19 @@ source ~/.completions
 alias np='pnpm'
 alias dev='cd $HOME/Development'
 alias chkk='cd $HOME/Development/chkk'
+alias ghcs="gh copilot suggest -t shell"
+alias ghcsg="gh copilot suggest -t git"
+alias ghce="gh copilot explain"
 
-PATH=~/.console-ninja/.bin:$PATH
 
+# Env variables
+export GOPATH="$HOME/go"
+export ANDROID_HOME=/Users/asad/Library/Android/sdk
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$GOPATH/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpcap/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+export PATH="/Users/asad/flutter/bin:/opt/homebrew/opt/openjdk/bin:$PATH"
